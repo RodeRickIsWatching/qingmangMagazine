@@ -1,0 +1,5 @@
+<!--components/cmps/articleLists/childCmps/pureText/cmp.wxml-->
+<view class="wrapper">
+    <view class="title">{{mainTitle}}</view>
+    <view class="content">{{subHead}}</view>
+</view>

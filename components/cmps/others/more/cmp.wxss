@@ -1,0 +1,13 @@
+/* components/cmps/tagLists/more/cmp.wxss */
+.wrapper{
+    display: inline-flex;
+    border: 1px solid #000;
+    padding: 5rpx 10rpx;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    width: 50rpx;
+    height: 50rpx;
+}

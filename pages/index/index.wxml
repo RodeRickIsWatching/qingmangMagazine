@@ -1,0 +1,9 @@
+<!-- pages/index/index.wxml -->
+<cmp-recommend class="recommendInfo" recommendInfo="{{recommendInfo}}"/>
+
+<cmp-tagList class="markList" markList="{{markList}}">
+    <cmp-add slot="before"></cmp-add>
+    <cmp-more slot="after"></cmp-more>
+</cmp-tagList>
+
+<cmp-articleLists articleList="{{articleList}}"/>

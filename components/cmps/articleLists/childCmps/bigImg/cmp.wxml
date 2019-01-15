@@ -1,0 +1,7 @@
+<!--widthFix 表示 宽度不变的情况下，高度自动变化，保持原图宽高比不变-->
+<view class="wrapper">
+    <image class="image"
+           mode="widthFix"
+           src="{{imgArray[0]}}"/>
+    <view class="des">{{mainTitle}}</view>
+</view>

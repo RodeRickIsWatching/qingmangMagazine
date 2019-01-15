@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/catalog/catalog"
+  ],
+  "tabBar": {
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/catalog/catalog",
+        "text": "目录",
+        "iconPath": "images/icon/catalog_selected.png",
+        "selectedIconPath": "images/icon/catalog.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "杂志",
+        "iconPath": "images/icon/index_selected.png",
+        "selectedIconPath": "images/icon/index.png"
+      }
+    ]
+  }
+}

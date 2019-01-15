@@ -1,0 +1,16 @@
+<!--components/cmps/articleLists/childCmps/imgText/cmp.wxml-->
+<view class="wrapper">
+    <view class="text-container">
+        <view class="title-wrapper">
+            <text class="title">{{mainTitle}}</text>
+        </view>
+        <view class="content-wrapper">
+            <text class="content">{{subHead}}</text>
+        </view>
+    </view>
+    <view class="image-wrapper">
+        <image class="image"
+               mode="aspectFit"
+               src="{{imgArray[0]}}"></image>
+    </view>
+</view>

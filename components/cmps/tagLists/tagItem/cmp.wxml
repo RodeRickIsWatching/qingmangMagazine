@@ -1,0 +1,3 @@
+<!--components/cmps/tagLists/tagItem/cmp.wxml-->
+<view class="wrapper">{{tag}}</view>
+

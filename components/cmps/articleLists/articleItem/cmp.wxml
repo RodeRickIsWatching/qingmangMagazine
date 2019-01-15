@@ -1,0 +1,59 @@
+<!--components/cmps/articleLists/articleItem/cmp.wxml-->
+<view class="wrapper">
+    <view class="mark-container">
+        <image class="avatar" src="{{articleDetail.mark.avatar}}"/>
+        <text class="text">{{articleDetail.mark.people}}等{{articleDetail.mark.count}}人马克了</text>
+    </view>
+
+    <view class="content-container">
+        <view wx:if="{{articleDetail.type == 0}}">
+            <cmp-bigImg img-array="{{articleDetail.imgArray}}"
+                        main-title="{{articleDetail.mainTitle}}"
+                        sub-head="{{articleDetail.subHead}}"
+                        video="{{articleDetail.video}}"
+            />
+        </view>
+        <view wx:elif="{{articleDetail.type == 1}}">
+            <cmp-nineImg img-array="{{articleDetail.imgArray}}"
+                         main-title="{{articleDetail.mainTitle}}"
+                         sub-head="{{articleDetail.subHead}}"
+                         video="{{articleDetail.video}}"
+            />
+        </view>
+        <view wx:elif="{{articleDetail.type == 2}}">
+            <cmp-imgText img-array="{{articleDetail.imgArray}}"
+                         main-title="{{articleDetail.mainTitle}}"
+                         sub-head="{{articleDetail.subHead}}"
+                         video="{{articleDetail.video}}"
+            />
+        </view>
+        <view wx:elif="{{articleDetail.type == 3}}">
+            <cmp-video2 img-array="{{articleDetail.imgArray}}"
+                        main-title="{{articleDetail.mainTitle}}"
+                        sub-head="{{articleDetail.subHead}}"
+                        video="{{articleDetail.video}}"
+            />
+        </view>
+        <view wx:else="{{articleDetail.type == 4}}">
+            <cmp-pureText img-array="{{articleDetail.imgArray}}"
+                          main-title="{{articleDetail.mainTitle}}"
+                          sub-head="{{articleDetail.subHead}}"
+                          video="{{articleDetail.video}}"
+            />
+        </view>
+    </view>
+
+    <view class="bottom-container">
+        <!--由于接口的结果问题，这里做一下特殊处理，以数组形式传入-->
+        <cmp-tagList markList="{{[{tag: articleDetail.tag, tagId: articleDetail.tagId}]}}"/>
+        <cmp-bottomNavIcon
+                tag="{{articleDetail.tag}}"
+                articleIndex="{{articleIndex}}"
+                likeStatus="{{likeStatus}}"
+        />
+    </view>
+</view>
+
+
+
+

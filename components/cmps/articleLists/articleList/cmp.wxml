@@ -1,0 +1,11 @@
+<!--components/cmps/articleLists/articleList/cmp.wxml-->
+<view class="wrapper">
+    <cmp-articleItem class="article"
+                     wx:for="{{articleList}}"
+                     article-detail="{{item}}"
+                     article-index="{{item.artId}}"
+                     wx:key="{{item.artId}}"
+    />
+</view>
+
+

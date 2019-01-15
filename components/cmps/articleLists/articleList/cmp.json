@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-articleItem": "/components/cmps/articleLists/articleItem/cmp"
+  }
+}

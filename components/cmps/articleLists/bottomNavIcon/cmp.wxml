@@ -1,0 +1,24 @@
+<!--components/cmps/articleLists/bottomNavIcon/cmp.wxml-->
+<view class="wrapper">
+    <view class="more-container container">
+        <image catchtap="showMenu" class="image" src="/images/icon/icon_more.png"></image>
+    </view>
+    <view class="share-container container">
+        <button class="button" open-type="share">
+            <image catchtap="share" class="image" src="/images/icon/icon_relay.png"></image>
+        </button>
+    </view>
+    <view class="liked-container container"
+          data-like-status="{{likeStatus}}"
+          data-index="{{articleIndex}}"
+          catchtap="toggleSign">
+        <image class="image"
+               src="/images/icon/icon_circle.png"
+               wx:if="{{!likeStatus}}"
+        />
+        <image class="image"
+               src="/images/icon/icon_circle_fill.png"
+               wx:if="{{likeStatus}}"
+        />
+    </view>
+</view>
