@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-articleItem": "/components/pageIndex/articleLists/articleItem/cmp",
+    "cmp-loading": "/components/utils/loading/cmp"
+  }
+}

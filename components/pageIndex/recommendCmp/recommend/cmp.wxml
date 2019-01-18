@@ -1,0 +1,12 @@
+<!--components/pageIndex/recommendCmp/recommend/cmp.wxml-->
+<view class="wrapper">
+    <!--这里之后要修改，按照不同的nav显示不同的文字-->
+    <text class="big-title">{{date}}</text>
+    <text class="title">{{recommendInfo.title}}</text>
+
+    <image class="image" src="{{recommendInfo.imgSrc}}" wx:if="{{recommendInfo.imgSrc}}"/>
+    <!--用于loading-->
+    <view class="loading" wx:if="{{!recommendInfo.imgSrc}}">
+        <view class="loader"></view>
+    </view>
+</view>

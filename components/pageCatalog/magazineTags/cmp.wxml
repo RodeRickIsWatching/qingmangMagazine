@@ -1,0 +1,16 @@
+<!--components/pageCatalog/magazineTags/cmp.wxml-->
+
+<view class="tag-list-container" wx:for="{{tagInfoList}}" wx:for-item="tagListItem" wx:key="title">
+
+    <view>{{tagListItem.title}} ></view>
+    <view>
+        <view wx:for="{{tagListItem.tagList}}" class="tag" wx:key="tag">
+            <text class="tag-text"># {{item.tag}}</text>
+            <cmp-tagController tag="{{item.tag}}"
+                               tag-id="{{item.tagId}}"
+                               catch:tap="triggerByCmp"
+            />
+        </view>
+    </view>
+</view>
+

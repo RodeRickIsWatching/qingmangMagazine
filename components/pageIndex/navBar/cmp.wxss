@@ -1,0 +1,19 @@
+/* components/pageIndex/navBar/cmp.wxss */
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30rpx;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.item {
+    display: inline-block;
+    font-size: 40rpx;
+    color: #888;
+    padding: 0 30rpx;
+}
+
+.active {
+    color: #000;
+}

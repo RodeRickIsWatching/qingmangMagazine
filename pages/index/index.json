@@ -1,9 +1,11 @@
 {
   "usingComponents": {
-    "cmp-articleLists": "/components/cmps/articleLists/articleList/cmp",
-    "cmp-tagList": "/components/cmps/tagLists/tagList/cmp",
-    "cmp-recommend": "/components/cmps/recommendCmp/recommend/cmp",
-    "cmp-add": "/components/cmps/others/add/cmp",
-    "cmp-more": "/components/cmps/others/more/cmp"
-  }
+    "cmp-articleLists": "/components/pageIndex/articleLists/articleList/cmp",
+    "cmp-tagList": "/components/pageIndex/tagLists/tagList/cmp",
+    "cmp-recommend": "/components/pageIndex/recommendCmp/recommend/cmp",
+    "cmp-add": "/components/pageIndex/others/add/cmp",
+    "cmp-more": "/components/pageIndex/others/more/cmp",
+    "cmp-navBar": "/components/pageIndex/navBar/cmp"
+  },
+  "enablePullDownRefresh": true
 }

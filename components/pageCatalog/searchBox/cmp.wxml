@@ -1,0 +1,12 @@
+<!--components/pageCatalog/searchBox/cmp.wxml-->
+<view class="wrapper">
+    <!--value是页面跳转后的初始内容-->
+    <input class="search"
+           type="text"
+           value="{{word}}"
+           placeholder="轻芒什么都有"
+           bindconfirm="onSearch"
+           bindblur="onBlur"
+    />
+    <text class="text" bindtap="onSearch" data-word="{{word}}">搜索</text>
+</view>

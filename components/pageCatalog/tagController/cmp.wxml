@@ -1,0 +1,5 @@
+<!--components/pageCatalog/tagController/cmp.wxml-->
+<view class="wrapper {{class == 'common' ?  '' : 'active'}}" catch:tap="onTap">
+    {{class == 'common' ? '订阅' : '已订阅'}}
+</view>
+

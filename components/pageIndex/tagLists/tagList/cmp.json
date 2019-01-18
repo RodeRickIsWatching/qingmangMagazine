@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-tagItem":"/components/pageIndex/tagLists/tagItem/cmp"
+  }
+}

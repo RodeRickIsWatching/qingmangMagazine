@@ -1,5 +1,0 @@
-<!--components/cmps/tagLists/more/cmp.wxml-->
-<!--tag中的更多选项-->
-<view class="wrapper" catch:tap="onTap">
-    <image class="image" src="/images/icon/Icon_more.png"/>
-</view>

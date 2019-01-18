@@ -1,0 +1,29 @@
+/* components/pageCatalog/subscription/cmp.wxss */
+
+.wrapper{
+    padding: 0 20rpx;
+}
+
+.controller-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40rpx 0;
+}
+
+.controller-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.my-magazine {
+    font-size: 40rpx;
+}
+
+.manage-magazine {
+    font-size: 30rpx;
+}
+
+.controller-content{
+    margin-top: 40rpx;
+}

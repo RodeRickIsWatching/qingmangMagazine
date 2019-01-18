@@ -1,0 +1,21 @@
+<!--components/pageIndex/utils/refresh/cmp.wxml-->
+<view class="container">
+    <scroll-view class="scroll"
+                 style="height:1334rpx;"
+                 scroll-y
+                 scroll-into-view="{{toView}}"
+                 scroll-with-animation
+                 bindscroll="toScroll"
+                 bindtouchend="onTouchEnd"
+                 bindtouchstart="onTouchStart"
+    >
+        <view id="refresh"
+              class="refresh-box"/>
+        <view id="content"
+              class="content"
+              style="margin-top:{{_height}}rpx">
+            <slot name="others"/>
+        </view>
+    </scroll-view>
+</view>
+

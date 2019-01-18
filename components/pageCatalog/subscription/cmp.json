@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-tagList": "/components/pageIndex/tagLists/tagList/cmp",
+    "cmp-add": "/components/pageIndex/others/add/cmp"
+  }
+}

@@ -1,1 +1,19 @@
 /* pages/index/index.wxss */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+
+.container{
+    margin-top: 55px;
+}

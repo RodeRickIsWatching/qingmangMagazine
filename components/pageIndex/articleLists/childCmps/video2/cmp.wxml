@@ -1,0 +1,36 @@
+<!--components/pageIndex/articleLists/childCmps/video2/cmp.wxml-->
+<view class="wrapper">
+    <view>
+        <!--视频组件-->
+        <video class="video"
+               id="myVideo"
+               src="{{video.src}}"
+               bindended="onEnd"
+               bindtap="onTap"
+               objectFit="fill">
+            <!--poster图片-->
+            <view class="img-wrapper"
+                  hidden="{{!ifPosterShow}}">
+                <image class="poster"
+                       src="{{video.poster}}">
+                </image>
+                <!--模拟播放按钮-->
+                <view class="btn-wrapper"
+                      catchtap="onPlay">
+                    <image class="play-btn"
+                           src="/images/icon/play.png"></image>
+                    <text class="duration">41'</text>
+                </view>
+            </view>
+        </video>
+    </view>
+
+
+    <view class="main-title">
+        <text>{{mainTitle}}</text>
+    </view>
+
+    <!--<view catch:tap="onMaskTap"-->
+    <!--class="mask" hidden="{{showPoster}}">-->
+    <!--</view>-->
+</view>

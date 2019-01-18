@@ -1,0 +1,16 @@
+<!--components/pageIndex/articleLists/articleList/cmp.wxml-->
+<view class="wrapper">
+    <cmp-articleItem class="article"
+                     wx:for="{{articleList}}"
+                     article-detail="{{item}}"
+                     article-index="{{item.artId}}"
+                     wx:key="{{item.artId}}"
+    />
+
+
+    <cmp-loading class="loading" hidden="{{!loading}}"></cmp-loading>
+
+    <text wx:if="{{noMoreData}}" class="no-more">没有更多了</text>
+</view>
+
+

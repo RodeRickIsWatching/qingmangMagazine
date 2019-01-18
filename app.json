@@ -1,4 +1,7 @@
 {
+  "window": {
+    "onReachBottomDistance": 50
+  },
   "pages": [
     "pages/index/index",
     "pages/catalog/catalog"

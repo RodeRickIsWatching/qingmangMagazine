@@ -1,0 +1,15 @@
+/* components/pageCatalog/tagController/cmp.wxss */
+.wrapper {
+    width: 120rpx;
+    line-height: 60rpx;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 28rpx;
+    color: #fff;
+}
+
+.wrapper.active {
+    background-color: #fff;
+    color: #000
+}

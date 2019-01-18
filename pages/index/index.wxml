@@ -1,9 +1,41 @@
 <!-- pages/index/index.wxml -->
-<cmp-recommend class="recommendInfo" recommendInfo="{{recommendInfo}}"/>
+<cmp-navBar class="nav" bindnav="onNav"></cmp-navBar>
 
-<cmp-tagList class="markList" markList="{{markList}}">
-    <cmp-add slot="before"></cmp-add>
-    <cmp-more slot="after"></cmp-more>
-</cmp-tagList>
+<view class="container" slot="others">
+    <cmp-recommend class="recommendInfo" recommendInfo="{{recommendInfo}}"/>
+    <cmp-tagList class="markList" markList="{{markList}}">
+        <cmp-add slot="before"></cmp-add>
+        <cmp-more slot="after"></cmp-more>
+    </cmp-tagList>
+    <cmp-articleLists
+            bindrefreshInfo="onRefreshInfo"
+            magazineId="{{magazineId}}"
+            articleList="{{articleList}}"
+            getMore="{{getMore}}"
+            refresh="{{refresh}}"
+    />
+</view>
 
-<cmp-articleLists articleList="{{articleList}}"/>
+
+
+<!--<cmp-refresh>-->
+    <!--&lt;!&ndash;利用插槽&ndash;&gt;-->
+    <!--<view class="container" slot="others">-->
+        <!--<cmp-recommend class="recommendInfo" recommendInfo="{{recommendInfo}}"/>-->
+        <!--<cmp-tagList class="markList" markList="{{markList}}">-->
+            <!--<cmp-add slot="before"></cmp-add>-->
+            <!--<cmp-more slot="after"></cmp-more>-->
+        <!--</cmp-tagList>-->
+        <!--<cmp-articleLists-->
+                <!--bindrefreshInfo="onRefreshInfo"-->
+                <!--magazineId="{{magazineId}}"-->
+                <!--articleList="{{articleList}}"-->
+                <!--getMore="{{getMore}}"-->
+                <!--refresh="{{refresh}}"-->
+        <!--/>-->
+    <!--</view>-->
+<!--</cmp-refresh>-->
+
+
+
+

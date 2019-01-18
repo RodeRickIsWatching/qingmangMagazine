@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-bigImg": "/components/pageIndex/articleLists/childCmps/bigImg/cmp",
+    "cmp-imgText": "/components/pageIndex/articleLists/childCmps/imgText/cmp",
+    "cmp-nineImg": "/components/pageIndex/articleLists/childCmps/nineImg/cmp",
+    "cmp-pureText": "/components/pageIndex/articleLists/childCmps/pureText/cmp",
+    "cmp-video": "/components/pageIndex/articleLists/childCmps/video/cmp",
+    "cmp-video2": "/components/pageIndex/articleLists/childCmps/video2/cmp",
+    "cmp-tagItem": "/components/pageIndex/tagLists/tagItem/cmp",
+    "cmp-tagList": "/components/pageIndex/tagLists/tagList/cmp",
+    "cmp-bottomNavIcon":"/components/pageIndex/articleLists/bottomNavIcon/cmp"
+  }
+}

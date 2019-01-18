@@ -1,0 +1,19 @@
+/* components/pageIndex/utils/refresh/cmp.wxss */
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 110rpx;
+    overflow: hidden
+}
+.scroll{
+
+}
+.refresh-box {
+    display: block;
+    height: 220rpx;
+    background-color: #666666;
+}
+
+.content{
+    display: block;
+}

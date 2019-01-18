@@ -1,0 +1,27 @@
+/* components/pageIndex/articleLists/bottomNavIcon/cmp.wxss */
+
+.wrapper {
+    float: right;
+    display: flex;
+    width: 200rpx;
+    align-content: center;
+}
+.container{
+    display: inline-block;
+    flex: 1;
+    height: 50rpx;
+}
+.image {
+    display: inline-block;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.button{
+    line-height: 50rpx;
+    display: inline-block;
+    background-color: transparent;
+}
+.button::after {
+    border: 0;
+}

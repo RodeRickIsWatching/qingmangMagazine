@@ -1,2 +1,14 @@
 <!--pages/catalog/catalog.wxml-->
-<text>pages/catalog/catalog.wxml</text>
+<view class="wrapper">
+    <view class="search-box-container">
+        <cmp-searchBox/>
+    </view>
+
+    <view class="mark-controller-container">
+        <cmp-subscription myTagList="{{myTagList}}"/>
+    </view>
+
+    <view class="tag-list-container">
+        <cmp-magazineTags tagInfoList="{{tagInfoList}}"  bindrefreshInfo="onRefreshInfo"/>
+    </view>
+</view>

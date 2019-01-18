@@ -1,0 +1,16 @@
+/* components/pageCatalog/magazineTags/cmp.wxss */
+
+.tag-list-container {
+    width: 700rpx;
+    margin: 50rpx auto 0;
+}
+
+.tag {
+    display: flex;
+    justify-content: space-between;
+    margin: 30rpx 0;
+}
+
+.tag-text {
+    font-size: 28rpx;
+}

@@ -1,0 +1,15 @@
+<!--components/pageCatalog/subscription/cmp.wxml-->
+<view class="wrapper">
+    <view class="controller-container">
+        <view class="controller-title">
+            <view class="my-magazine">我的杂志</view>
+            <view class="manage-magazine">管理杂志</view>
+        </view>
+
+        <view class="controller-content">
+            <cmp-tagList markList="{{myTagList}}">
+                <cmp-add slot="before"></cmp-add>
+            </cmp-tagList>
+        </view>
+    </view>
+</view>

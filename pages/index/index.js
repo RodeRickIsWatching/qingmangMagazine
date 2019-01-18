@@ -1,5 +1,6 @@
 // pages/index/index.js
 import {_Ajax} from "../../models/requests"
+import {randomStr} from "../../utils/getRandom";
 
 const _ajax = new _Ajax();
 
@@ -14,7 +15,8 @@ Page({
         recommendInfo: {},
         getMore: '',
         magazineId: 0,
-        loading: true
+        loading: true,
+        refresh: ''
     },
     /**
      * 发送请求，并保存值
@@ -24,13 +26,55 @@ Page({
         const markList = _ajax.getMarkTypeList(magazineId);
         const recommendInfo = _ajax.getRecommendInfo(magazineId);
         Promise.all([articleList, markList, recommendInfo]).then(res => {
-            console.log(res[0].data.data);
             this.setData({
                 articleList: res[0].data.data,
                 markList: res[1].data.data,
                 recommendInfo: res[2].data.data
             })
         })
+    },
+    /**
+     *自定义nav事件，用于切换nav对应的内容
+     */
+    onNav(e) {
+        //获取点击的index，用于修改接口地址发送请求获取内容
+        let _index = e.detail._index
+        //重新渲染页面：重置数据（清空页面），跳转到顶部，重新获取
+        this._setMagazindId(_index)
+        this._resetData()
+        this._scrollPageToTop()
+        this.getData(this.data.magazineId);
+    },
+    _setMagazindId(magazineId) {
+        this.setData({
+            magazineId
+        })
+    },
+    _resetData() {
+        this.setData({
+            articleList: [],
+            markList: [],
+            recommendInfo: {}
+        })
+    },
+    _scrollPageToTop() {
+        wx.pageScrollTo({
+            scrollTop: 0,
+            duration: 0
+        })
+    },
+    /**
+     * 自定义refresh事件
+     * 暂时有bug，怀疑是放进slot无法触发
+     * */
+    onRefreshInfo(e) {
+        console.log(124)
+        this.setData({
+            refresh: randomStr()
+        })
+    },
+    onPageScroll() {
+
     },
     /**
      * 生命周期函数--监听页面加载
@@ -57,7 +101,7 @@ Page({
      * 生命周期函数--监听页面隐藏
      */
     onHide: function () {
-
+        console.log(this.data.articleList)
     },
 
     /**
@@ -71,14 +115,17 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh: function () {
-
+        this.setData({
+            refresh: randomStr()
+        })
     },
-
     /**
      * 页面上拉触底事件的处理函数
      */
     onReachBottom: function () {
-
+        this.setData({
+            getMore: randomStr()
+        })
     },
 
     /**

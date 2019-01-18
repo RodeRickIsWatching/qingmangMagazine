@@ -1,4 +1,7 @@
 {
-  "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "cmp-searchBox": "/components/pageCatalog/searchBox/cmp",
+    "cmp-subscription": "/components/pageCatalog/subscription/cmp",
+    "cmp-magazineTags": "/components/pageCatalog/magazineTags/cmp"
+  }
 }
