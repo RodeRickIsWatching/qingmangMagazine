@@ -16,4 +16,6 @@
         />
     </view>
 
+    <!--网速不好时进行loading-->
+    <cmp-loading class="loading" wx:if="{{!result}}"/>
 </view>

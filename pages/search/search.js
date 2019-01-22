@@ -23,7 +23,6 @@ Page({
         let searchArticleList = _ajax.searchArticleList(_word)
         Promise.all([searchArticleRecommend, searchArticleList]).then(res => {
             this.setResult([res[0].data],res[1].data.data)
-            console.log(res[1].data.data)
         })
     },
     setResult(result, articleList) {
