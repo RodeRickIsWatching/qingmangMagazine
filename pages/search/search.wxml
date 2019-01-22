@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<view class="wrapper">
+    <view class="search-container">
+        <cmp-searchBox word="{{searchWord}}"/>
+    </view>
+
+    <view class="recommend-container">
+        <cmp-recommendList result="{{result}}"></cmp-recommendList>
+    </view>
+
+    <view class="articleList-container">
+        <cmp-articleList
+                articleList="{{articleList}}"
+                searchWord="{{searchWord}}"
+                getMore="{{getMore}}"
+        />
+    </view>
+
+</view>

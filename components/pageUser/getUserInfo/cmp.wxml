@@ -1,0 +1,4 @@
+<!--components/pageUser/getUserInfo/cmp.wxml-->
+<button plain="true" class="container" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+    <slot name="img"></slot>
+</button>

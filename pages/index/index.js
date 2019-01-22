@@ -18,6 +18,17 @@ Page({
         loading: true,
         refresh: ''
     },
+    _init(){
+        this.setData({
+            articleList: [],
+            markList: [],
+            recommendInfo: {},
+            getMore: '',
+            magazineId: 0,
+            loading: true,
+            refresh: ''
+        })
+    },
     /**
      * 发送请求，并保存值
      */
@@ -65,10 +76,9 @@ Page({
     },
     /**
      * 自定义refresh事件
-     * 暂时有bug，怀疑是放进slot无法触发
+     *
      * */
     onRefreshInfo(e) {
-        console.log(124)
         this.setData({
             refresh: randomStr()
         })
@@ -94,14 +104,15 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
+        this._init()
     },
 
     /**
      * 生命周期函数--监听页面隐藏
      */
     onHide: function () {
-        console.log(this.data.articleList)
+
+        // console.log(this.data.articleList)
     },
 
     /**

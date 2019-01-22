@@ -1,0 +1,13 @@
+<!--components/pageUser/userInfo/cmp.wxml-->
+<view class="user-container">
+    <view class="user-info">
+        <view class="user-name">{{userInfo.nickName}}</view>
+        <view class="user-avatar">
+            <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}"/>
+
+            <cmp-getUserInfo bind:deliverUserInfo="onDeliverUserInfo">
+                <image src="/images/icon/login.png" slot="img"/>
+            </cmp-getUserInfo>
+        </view>
+    </view>
+</view>

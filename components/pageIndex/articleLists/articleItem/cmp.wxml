@@ -47,6 +47,7 @@
         <!--由于接口的结果问题，这里做一下特殊处理，以数组形式传入-->
         <cmp-tagList markList="{{[{tag: articleDetail.tag, tagId: articleDetail.tagId}]}}"/>
         <cmp-bottomNavIcon
+                articleDetail="{{articleDetail}}"
                 tag="{{articleDetail.tag}}"
                 articleIndex="{{articleIndex}}"
                 likeStatus="{{likeStatus}}"

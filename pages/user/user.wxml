@@ -1,0 +1,7 @@
+<!--pages/user/user.wxml-->
+<view class="wrapper">
+    <cmp-userInfo bindgetMarkList="onGetMarkList"/>
+
+
+    <cmp-articleList articleList="{{articleList}}" getMore="{{getMore}}"/>
+</view>

@@ -1,0 +1,7 @@
+<!--components/pageSearch/recommendItem/cmp.wxml-->
+<view class="wrapper">
+    <view class="text">#{{recommend.tag}}></view>
+    <view class="recommend-list">
+        <view class="recommend" wx:for="{{recommend.recommend}}" wx:key="*this">{{item}}</view>
+    </view>
+</view>

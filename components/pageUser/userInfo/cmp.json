@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-getUserInfo":"/components/pageUser/getUserInfo/cmp"
+  }
+}

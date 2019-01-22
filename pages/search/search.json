@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "cmp-searchBox": "/components/pageCatalog/searchBox/cmp",
+    "cmp-articleList": "/components/pageIndex/articleLists/articleList/cmp",
+    "cmp-loading": "/components/utils/loading/cmp",
+    "cmp-recommendList": "/components/pageSearch/recommendList/cmp"
+  }
+}

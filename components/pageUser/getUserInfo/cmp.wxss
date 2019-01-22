@@ -1,0 +1,5 @@
+/* components/pageUser/getUserInfo/cmp.wxss */
+.container{
+    padding: 0 !important;
+    border: none !important;
+}

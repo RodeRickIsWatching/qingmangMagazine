@@ -26,13 +26,13 @@ Component({
         attached() {
             // 刚渲染页面时候，调取storage
             let arr = lM.getLikeList()
-            // toString是因为存在内部的数据是String格式，也可以都转换成number
-            let flag = arr.includes(this.properties.articleIndex.toString())
-            if(flag){
-                this.setData({
-                    likeStatus: true
-                })
-            }
+            arr.forEach((item, index) => {
+                if (this.properties.articleIndex == item.artId) {
+                    this.setData({
+                        likeStatus: true
+                    })
+                }
+            })
         }
     }
 })

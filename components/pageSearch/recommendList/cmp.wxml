@@ -1,0 +1,6 @@
+<!--components/pageSearch/recommendList/cmp.wxml-->
+<view class="wrapper">
+    <view wx:for="{{result}}" wx:key="*this">
+        <cmp-recommendItem recommend="{{item.data}}"/>
+    </view>
+</view>

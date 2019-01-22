@@ -3,10 +3,23 @@ import {_Ajax} from "../../../../models/requests"
 
 const _ajax = new _Ajax();
 Component({
+    lifetimes: {
+        attached() {
+            //确认当前页面
+            let str = getCurrentPages()["0"].route;
+            let ifSearchPage = str.includes("search")
+            let ifUserPage = str.includes("user")
+            this.setData({
+                ifSearchPage,
+                ifUserPage
+            })
+        }
+    },
     /**
      * 组件的属性列表
      */
     properties: {
+        searchWord: String,
         magazineId: Number,
         articleList: Array,
         getMore: {
@@ -26,7 +39,9 @@ Component({
      */
     data: {
         loading: false,
-        noMoreData: false
+        noMoreData: false,
+        ifSearchPage: false,
+        ifUserPage: false
     },
 
     /**
@@ -60,10 +75,17 @@ Component({
             //开启loading动画
             this._inLoading()
             //发送请求
-            this.sendAjax(_count).then(res => this.loadMoreCb(res))
+            if (!this.data.ifUserPage) {
+                this.sendAjax(_count).then(res => this.loadMoreCb(res))
+            } else {
+                let self = this
+                // setTimeout(function () {
+                    self.loadMoreCb()
+                // }, 1000)
+            }
         },
         loadMoreCb(res) {
-            let len = res.data.data.length;
+            let len = res ? res.data.data.length : 0;
             if (len > 0) {
                 this._setData(res.data.data)
             } else {
@@ -79,8 +101,13 @@ Component({
             }, timer)
         },
         sendAjax(_count) {
-            /**一个是magazineId，另一个是第几条开始传递*/
-            return _ajax.getArticleList(this.properties.magazineId, _count)
+            if (this.data.ifSearchPage) {
+                return _ajax.searchArticleList(this.properties.searchWord, _count)
+            } else if (this.data.ifUserPage) {
+                return
+            } else {
+                return _ajax.getArticleList(this.properties.magazineId, _count)
+            }
         },
         _refreshData(_data) {
             this.setData({

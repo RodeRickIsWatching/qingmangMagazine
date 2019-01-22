@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cmp-articleList": "/components/pageIndex/articleLists/articleList/cmp",
+    "cmp-userInfo": "/components/pageUser/userInfo/cmp"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cmp-recommendItem":"/components/pageSearch/recommendItem/cmp"
+  }
+}

@@ -1,0 +1,9 @@
+/* pages/search/search.wxss */
+.recommend-container {
+    width: 700rpx;
+    margin: 70rpx auto;
+    padding-top: 70rpx;
+    padding-bottom: 70rpx;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}

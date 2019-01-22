@@ -17,12 +17,12 @@ class likeModel {
         return sc.getStorage('likeList', 'sync') || []
     }
 
-    removeLikeList(Id) {
+    removeLikeList(_item) {
         //找到目标索引，移除，再重新set
         const likeList = this.getLikeList()
         let myIndex = 0
         likeList.forEach((item, index) => {
-            if (item == Id) {
+            if (item.artId == _item.artId) {
                 myIndex = index
                 return
             }
@@ -31,18 +31,18 @@ class likeModel {
         this._setLikeList(likeList)
     }
 
-    addLikeList(Id) {
+    addLikeList(_item) {
         const likeList = this.getLikeList()
         let flag = false
         likeList.forEach((item, index) => {
             // 查重操作
-            if (item == Id) {
+            if (item.artId == _item.artId) {
                 flag = true
                 return
             }
         })
         if (!flag) {
-            likeList.unshift(Id)
+            likeList.unshift(_item)
             this._setLikeList(likeList)
         }
     }

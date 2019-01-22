@@ -10,7 +10,8 @@ Component({
     properties: {
         tag: String,
         articleIndex: String,
-        likeStatus: Boolean
+        likeStatus: Boolean,
+        articleDetail: Object
     },
 
     /**
@@ -31,16 +32,17 @@ Component({
         },
         toggleSign(e) {
             // 切换like样式
+            let articleItem = this.properties.articleDetail;
             let _status = !e.currentTarget.dataset.likeStatus;
-            let _index = e.currentTarget.dataset.index;
+            // let _index = e.currentTarget.dataset.index;
             this.setData({
                 likeStatus: _status
             });
             // 针对不同情况添加调用不同的方法，初始化在articleItem组件中进行
             if (_status) {
-                this.addLikeList(_index)
+                this.addLikeList(articleItem)
             } else {
-                this.removeLikeList(_index)
+                this.removeLikeList(articleItem)
             }
         },
         share() {

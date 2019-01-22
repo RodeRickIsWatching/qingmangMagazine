@@ -26,17 +26,17 @@ class _Ajax extends ajaxRequest {
         })
     }
 
-    // 搜索文章列表：searchArticleList
-    searchArticleList(searchText = '读书') {
+    // 搜索文章列表：searchArticleLists
+    searchArticleList(searchText = '读书', count = 0) {
         return this._request({
-            url: `/searchArticleList/${searchText}`
+            url: `/searchArticleList/${searchText}/${count}`
         })
     }
 
     // 搜索推荐文章：searchArticleRecommend
-    searchArticleRecommend(searchText = '读书', count = 0) {
+    searchArticleRecommend(searchText = '读书') {
         return this._request({
-            url: `/searchArticleRecommend/${searchText}/${count}`
+            url: `/searchArticleRecommend/${searchText}`
         })
     }
 }

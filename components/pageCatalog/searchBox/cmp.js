@@ -3,14 +3,14 @@ Component({
     /**
      * 组件的属性列表
      */
-    properties: {},
+    properties: {
+        word: String
+    },
 
     /**
      * 组件的初始数据
      */
-    data: {
-        word: ''
-    },
+    data: {},
 
     /**
      * 组件的方法列表
@@ -31,7 +31,13 @@ Component({
                 })
                 return
             }
+            this.turnToSearchPage(value)
         },
+        turnToSearchPage(_val) {
+            wx.navigateTo({
+                url: `/pages/search/search?searchWord=${_val}`
+            })
+        }
     }
 
 })
