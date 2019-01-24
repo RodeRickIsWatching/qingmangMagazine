@@ -1,0 +1,17 @@
+/* pages/weather/weather.wxss */
+page{
+    height: 100%;
+}
+.wrapper{
+    height: 100%;
+    font-size: 40rpx;
+}
+
+.shadow{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

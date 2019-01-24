@@ -1,0 +1,51 @@
+<!--components/pageWeather/weather/cmp.wxml-->
+<view class="wrapper" wx:if="{{address}}">
+    <view class="location">
+        <view>
+            <image class="image" src="/images/icon/address.png"></image>
+            <text>{{address}}</text>
+        </view>
+    </view>
+
+    <view class="weather-info box-margin">
+        <view wx:for="{{todayWeather}}" wx:key="">
+            <view class="temp">
+                <text class="text">{{item.temp}}</text>
+                <text class="degree">°</text>
+            </view>
+            <view class="weather">
+                <image class="icon" src="{{weatherIcon}}"></image>
+                <text>{{item.weather}}</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="des box-margin">
+        {{des}}
+    </view>
+
+    <view class="container box-margin">
+        <view wx:for="{{_todayAndTommorrow}}" wx:key="" class="today-tomorrow-container">
+            <view class="view-container">
+                <view>{{item.date}}</view>
+                <view>{{item.low}}/{{item.high}}</view>
+            </view>
+            <view class="view-container">
+                <view>{{item.type}}</view>
+                <view>
+                    <image class="icon" src="{{weatherIcon}}"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view>
+    <slot name="byDate"></slot>
+</view>
+
+
+<view class="other-info">
+
+</view>
+

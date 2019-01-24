@@ -1,0 +1,26 @@
+/* components/pageWeather/futureWeatherByDate/cmp.wxss */
+.wrapper{
+    /*background-color: #666666;*/
+}
+
+.container{
+    padding: 30rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30rpx;
+}
+
+.by-Date{
+    flex: 1;
+    margin: 0 20rpx;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image{
+    width: 50rpx;
+    height: 50rpx;
+}
+

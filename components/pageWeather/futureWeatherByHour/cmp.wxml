@@ -1,0 +1,18 @@
+<!--components/pageWeather/futureWeatherByHour/cmp.wxml-->
+<view class="wrapper" wx:if="{{weatherIcon}}">
+    <block wx:if="{{futureByHour.length > 0}}">
+        <view wx:for="{{futureByHour}}" wx:key="" class="info">
+            <view>{{item.time}}</view>
+            <image class="icon" src="{{weatherIcon}}"></image>
+            <view>{{item.temp}}°</view>
+        </view>
+    </block>
+    <block wx:else>
+        <view wx:for="{{todayWeather}}" wx:key="" class="info">
+            <view>{{item.time}}</view>
+            <image class="icon" src="{{weatherIcon}}"></image>
+            <view>{{item.temp}}°</view>
+        </view>
+    </block>
+
+</view>

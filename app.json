@@ -2,15 +2,27 @@
   "window": {
     "onReachBottomDistance": 50
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "pages": [
     "pages/index/index",
     "pages/catalog/catalog",
     "pages/search/search",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/weather/weather"
   ],
   "tabBar": {
     "selectedColor": "#000",
     "list": [
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "iconPath": "images/icon/tianqi.png",
+        "selectedIconPath": "images/icon/tianqi_selected.png"
+      },
       {
         "pagePath": "pages/catalog/catalog",
         "text": "目录",

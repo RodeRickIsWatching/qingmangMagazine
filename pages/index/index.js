@@ -129,6 +129,9 @@ Page({
         this.setData({
             refresh: randomStr()
         })
+        setTimeout(()=>{
+            wx.stopPullDownRefresh()
+        },500)
     },
     /**
      * 页面上拉触底事件的处理函数

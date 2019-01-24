@@ -1,0 +1,70 @@
+/* components/pageWeather/weather/cmp.wxss */
+.wrapper{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   /*background-color: greenyellow;*/
+}
+.location{
+    text-align: center;
+    font-size: 30rpx;
+}
+.image{
+   vertical-align: middle;
+   width: 30rpx;
+   height: 30rpx;
+}
+.icon{
+    vertical-align: -5rpx;
+    width: 45rpx;
+    height: 45rpx;
+}
+.temp{
+    text-align: center;
+    display: flex;
+   font-size: 100rpx;
+}
+.temp .text{
+    font-size: 150rpx;
+   font-weight: 600;
+}
+.degree{
+    align-self: flex-start;
+}
+.weather{
+    text-align: center;
+}
+
+.des{
+    font-size: 30rpx;
+    margin: 0 10%;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30rpx;
+    width: 100%;
+}
+.today-tomorrow-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    width: 50%;
+}
+.view-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-tomorrow-container:not(:last-of-type){
+    border-right: 1px solid black;
+}
+
+
+.box-margin{
+    margin-bottom: 30rpx;
+}

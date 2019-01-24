@@ -1,0 +1,26 @@
+/* components/pageWeather/futureWeatherByHour/cmp.wxss */
+.wrapper{
+   font-size: 35rpx;
+   font-weight: 400;
+   /*background-color: aquamarine;*/
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   /*height: 200rpx;*/
+   width: 100%;
+   padding: 20rpx 0;
+}
+
+.info{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 20rpx;
+   text-align: center;
+}
+
+.icon{
+   width: 70rpx;
+   height: 70rpx;
+}

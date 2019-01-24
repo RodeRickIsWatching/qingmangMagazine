@@ -1,0 +1,21 @@
+<!--components/pageWeather/futureWeatherByDate/cmp.wxml-->
+<view class="wrapper" wx:if="{{weatherIcon}}">
+    <view>
+        <slot name="byHour"></slot>
+    </view>
+
+    <view class="container">
+        <view wx:for="{{futureByDate}}" wx:key="" class="by-Date">
+            <view>{{item.date}}</view>
+            <view>{{item.type}}</view>
+            <view>
+                <image class="image" src="{{weatherIcon}}"></image>
+            </view>
+            <view>{{item.high}}</view>
+            <view>{{item.low}}</view>
+            <view>{{item.fengxiang}}</view>
+        </view>
+    </view>
+</view>
+
+

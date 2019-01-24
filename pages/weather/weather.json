@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "cmp-weather": "/components/pageWeather/weather/cmp",
+    "cmp-futureByDate": "/components/pageWeather/futureWeatherByDate/cmp",
+    "cmp-futureByHour": "/components/pageWeather/futureWeatherByHour/cmp",
+    "cmp-loading": "/components/utils/loading/cmp"
+  },
+  "enablePullDownRefresh": true
+}
