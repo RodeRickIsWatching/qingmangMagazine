@@ -1,18 +1,26 @@
 <!--pages/weather/weather.wxml-->
-<view class="wrapper">
-    <!--<button type="primary" bindtap="getLocation">获取用户地址</button>-->
-   <view wx:if="{{_completeFlag}}">
-       <cmp-weather todayWeather="{{_today}}" des="{{_des}}" address="{{_address}}" weatherIcon="{{weatherIcon}}"
-                    _todayAndTommorrow="{{_todayAndTommorrow}}">
-           <cmp-futureByDate slot="byDate" futureByDate="{{_futureByDate}}" weatherIcon="{{weatherIcon}}">
-               <cmp-futureByHour slot="byHour" futureByHour="{{_futureByHour}}" todayWeather="{{_today}}"
-                                 weatherIcon="{{weatherIcon}}"></cmp-futureByHour>
-           </cmp-futureByDate>
-       </cmp-weather>
-   </view>
+<view class="wrapper" style="">
+    <!--style="background: url('{{_bgSrc}}');  background-position: 50% 60%;"-->
+    <view class="container" wx:if="{{_completeFlag}}" style="color:{{_fontColor}}">
+
+        <cmp-weather todayWeather="{{_today}}" des="{{_des}}" address="{{_address}}"
+                     _todayAndTommorrow="{{_todayAndTommorrow}}"
+                     catchchooseLoaction="onChooseLoaction"
+        >
+            <cmp-futureByDate slot="byDate" futureByDate="{{_futureByDate}}">
+                <cmp-futureByHour slot="byHour" futureByHour="{{_futureByHour}}"
+                                  todayWeather="{{_today}}"></cmp-futureByHour>
+            </cmp-futureByDate>
+        </cmp-weather>
+    </view>
+
 
 
     <view class="shadow" wx:else>
         <cmp-loading class="loading"></cmp-loading>
     </view>
+</view>
+
+<view class="imageBox" style="height:{{_height}}">
+    <image class="image" src="{{_bgSrc}}"/>
 </view>

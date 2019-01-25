@@ -1,7 +1,7 @@
 // pages/weather/weather.js
 import {getLocation} from "../../models/getLocation";
 import {getWeatherModel} from "../../models/getWeather";
-import {getIcon} from "../../utils/weatherIcon";
+// import {getIcon} from "../../utils/weatherIcon";
 
 const gW = new getWeatherModel()
 const gL = new getLocation()
@@ -18,39 +18,58 @@ Page({
         _futureByHour: [],
         _futureByDate: [],
         _todayAndTommorrow: [],
-        _completeFlag: false
+        _completeFlag: false,
+        _bgSrc: '',
+        _fontColor: '',
     },
-    getLocation() {
+    onChooseLoaction() {
+        wx.getLocation({
+            type: 'gcj02', // 返回可以用于wx.openLocation的经纬度
+            success: res => {
+                const latitude = res.latitude
+                const longitude = res.longitude
+                wx.chooseLocation({
+                    success: res => {
+                        console.log(res)
+                        this.getLocation(res.latitude, res.longitude)
+                    }
+                })
+            }
+        })
+    },
+    sucCB(_param) {
+        let self = this
+        gL._getAddress(_param)
+        //获取具体地址和城市
+            .then(res => {
+                let _city = res.addressComponent.province;
+                let _address = res.formatted_address
+                this.setLoation({_address, _city})
+
+                gW.getWeather(_city).then(res => {
+                    //获取今天和未来几天的天气
+                    this.chargeByDate(res.forecast)
+                    this.setDes(res.ganmao)
+                })
+                gW.getRealTimeWeather(_city).then(res => {
+                    //获取今天到凌晨12点的天气
+                    this.chargeByHours(res)
+                })
+            })
+    },
+    getLocation(_latitude = '', _longitude = '') {
         this.changeStatus(false)
         wx.getLocation({
             //获取地址经纬度
             type: 'gcj02', // 返回可以用于wx.openLocation的经纬度
             success: res => {
-                let latitude = res.latitude
-                let longitude = res.longitude
+                let latitude = _latitude || res.latitude
+                let longitude = _longitude || res.longitude
                 let _param = `${longitude},${latitude}`
 
-                gL._getAddress(_param)
-                //获取具体地址和城市
-                    .then(res => {
-                        let _city = res.addressComponent.province;
-                        let _address = res.formatted_address
-                        this.setLoation({_address, _city})
-
-                        gW.getWeather(_city).then(res => {
-                            console.log(res)
-                            //获取今天和未来几天的天气
-                            this.chargeByDate(res.forecast)
-                            this.setDes(res.ganmao)
-                        })
-                        gW.getRealTimeWeather(_city).then(res => {
-                            //获取今天到凌晨12点的天气
-                            this.chargeByHours(res)
-                        })
-                    })
+                this.sucCB(_param)
             }
         })
-
         this._judgeStatus()
 
     },
@@ -77,7 +96,7 @@ Page({
             }
             res()
         }).then(res => {
-            console.log(1234)
+
             this.changeStatus(true)
         }).catch(rej => {
             //说明此时有的数据还没有赋值完毕或接收完毕，每500ms判断一次
@@ -87,23 +106,107 @@ Page({
             }, 500)
         })
     },
+    _getSize() {
+        wx.getSystemInfo({
+            success: res => {
+                console.log(res)
+                this.setData({
+                    _height: 1334+'rpx'
+                })
+            }
+        })
+    },
     changeStatus(_completeFlag) {
         this.setData({
             _completeFlag
         })
     },
+    chooseBg(_target) {
+        let bgArr = ["晴", "云", "阴", "雨", "雪"];
+        let temp = '';
+        temp = bgArr.filter(item => {
+            return _target.includes(item)
+        })
+        let bgObj = {
+            "晴": 100,
+            "云": 103,
+            "阴": 101,
+            "雨": 30,
+            "雪": 30
+        }
+        let _fontColorObj = {
+            "晴": '#000',
+            "云": '#000',
+            "阴": '#fff',
+            "雨": '#fff',
+            "雪": '#fff'
+        }
+
+
+        let _bgSrc = `/images/bg/${bgObj[temp]}.jpg`
+        let _fontColor = _fontColorObj[temp]
+        this.setData({
+            _bgSrc,
+            _fontColor
+        })
+    },
     chargeByDate(_arr) {
+        this.chooseBg(_arr[0].type)
+
         _arr.forEach((item, index) => {
             item.date = item.date.split("日")[1];
-            item.date = item.date.replace("星期","周");
+            item.date = item.date.replace("星期", "周");
             item.high = item.high.split(" ")[1];
             item.low = item.low.split(" ")[1];
-            item.fengxiang = item.fengxiang.replace("持续","")
+            item.fengxiang = item.fengxiang.replace("持续", "")
         })
         this.setTodayAndTomorrow([_arr[0], _arr[1]])
         this.setFutureWeatherByDate(_arr)
     },
+    fangZha() {
+        let date = new Date()
+        let temp = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+        return [{
+            "temp": "2",
+            "time": `${temp} 02:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "4",
+            "time": `${temp} 05:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "7",
+            "time": `${temp} 08:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "13",
+            "time": `${temp} 11:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "15",
+            "time": `${temp} 14:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "11",
+            "time": `${temp} 17:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "8",
+            "time": `${temp} 20:00:00`,
+            "weather": "晴"
+        }, {
+            "temp": "5",
+            "time": `${temp} 23:00:00`,
+            "weather": "多云"
+        }]
+    },
     chargeByHours(_arr) {
+        //防炸操作！
+        _arr.forEach(item => {
+            if (Object.is(item, null)) {
+                item = this.fangZha()
+            }
+        })
         //过滤值，这里对时间的处理不好，以后要修改，即先转换成毫秒值再转换为具体日期
         let _time = new Date();
         let _month = _time.getMonth() + 1;
@@ -119,10 +222,12 @@ Page({
         })
 
         //传值
-        this.setIcon(tempArr[0].weather)
         this.setNowWeather([tempArr[0]])
-        tempArr.shift()
+        if(tempArr.length>2){
+            tempArr.shift()
+        }
         this.setFutureWeatherByHour(tempArr)
+
     },
     setDes(_des) {
         this.setData({
@@ -132,12 +237,6 @@ Page({
     setTodayAndTomorrow(_todayAndTommorrow) {
         this.setData({
             _todayAndTommorrow
-        })
-    },
-    setIcon(_weather) {
-        let weatherIcon = getIcon(_weather)
-        this.setData({
-            weatherIcon
         })
     },
     setNowWeather(_today) {
@@ -183,7 +282,7 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-
+        this._getSize()
     },
 
     /**
@@ -212,9 +311,9 @@ Page({
      */
     onPullDownRefresh: function () {
         this.getLocation()
-        setTimeout(()=>{
+        setTimeout(() => {
             wx.stopPullDownRefresh()
-        },500)
+        }, 500)
     },
 
     /**

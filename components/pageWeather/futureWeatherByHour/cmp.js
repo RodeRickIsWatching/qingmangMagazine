@@ -1,25 +1,15 @@
 // components/pageWeather/futureWeatherByHour/cmp.js
+
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-        weatherIcon: String,
         futureByHour: {
-            type: Array,
-            value: [{
-                time: '--:--',
-                weather: '-',
-                temp: '-'
-            }]
+            type: Array
         },
         todayWeather: {
-            type: Array,
-            value: [{
-                time: '--:--',
-                weather: '-',
-                temp: '-'
-            }]
+            type: Array
         }
     },
 

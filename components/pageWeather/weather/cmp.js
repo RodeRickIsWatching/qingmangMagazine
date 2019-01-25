@@ -11,7 +11,6 @@ Component({
         todayWeather: Array,
         address: String,
         des: String,
-        weatherIcon: String,
         _todayAndTommorrow: Array
 
     },
@@ -24,5 +23,9 @@ Component({
     /**
      * 组件的方法列表
      */
-    methods: {}
+    methods: {
+        onTap(){
+            this.triggerEvent("chooseLoaction")
+        }
+    }
 })

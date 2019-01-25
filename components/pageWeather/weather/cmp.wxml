@@ -1,8 +1,12 @@
 <!--components/pageWeather/weather/cmp.wxml-->
+
+<!--引入wxs-->
+<wxs module="getIcon" src="../../../utils/weatherIcon.wxs"></wxs>
+
 <view class="wrapper" wx:if="{{address}}">
-    <view class="location">
+    <view class="location" catchtap="onTap">
         <view>
-            <image class="image" src="/images/icon/address.png"></image>
+            <image class="image" src="/images/icon/address.png" ></image>
             <text>{{address}}</text>
         </view>
     </view>
@@ -14,7 +18,7 @@
                 <text class="degree">°</text>
             </view>
             <view class="weather">
-                <image class="icon" src="{{weatherIcon}}"></image>
+                <image class="icon" src="{{getIcon.getIcon(item.weather)}}"></image>
                 <text>{{item.weather}}</text>
             </view>
         </view>
@@ -33,7 +37,7 @@
             <view class="view-container">
                 <view>{{item.type}}</view>
                 <view>
-                    <image class="icon" src="{{weatherIcon}}"></image>
+                    <image class="icon" src="{{getIcon.getIcon(item.type)}}"></image>
                 </view>
             </view>
         </view>

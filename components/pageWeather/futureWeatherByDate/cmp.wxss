@@ -1,6 +1,7 @@
 /* components/pageWeather/futureWeatherByDate/cmp.wxss */
 .wrapper{
     /*background-color: #666666;*/
+    position: relative;
 }
 
 .container{
@@ -24,3 +25,10 @@
     height: 50rpx;
 }
 
+.canvas-container{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    margin: 10rpx 0rpx;
+    transform: translateY(-315rpx);
+}

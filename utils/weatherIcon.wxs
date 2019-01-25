@@ -1,6 +1,5 @@
-let baseUrl = "/images/cond-icon-heweather/"
-
-let weatherIconObj = {
+var baseUrl = "/images/cond-icon-heweather/";
+var weatherIconObj = {
     "晴": "100",
     "多云": "101",
     "少云": "102",
@@ -72,15 +71,9 @@ let weatherIconObj = {
     "冷": "901",
     "未知": "999"
 }
-
-
-function getIcon(_weather) {
-    for(let i in weatherIconObj){
-        if(i == _weather){
-            return `${baseUrl}${weatherIconObj[i]}.png`
-        }
-    }
+var getIcon = function(_weather) {
+    return baseUrl+weatherIconObj[_weather]+'.png'
 }
-
-
-export {getIcon}
+module.exports={
+    getIcon:getIcon
+}

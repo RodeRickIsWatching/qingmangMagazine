@@ -1,18 +1,14 @@
 <!--components/pageWeather/futureWeatherByHour/cmp.wxml-->
-<view class="wrapper" wx:if="{{weatherIcon}}">
+
+<!--引入wxs-->
+<wxs module="getIcon" src="../../../utils/weatherIcon.wxs"></wxs>
+
+<view class="wrapper">
     <block wx:if="{{futureByHour.length > 0}}">
         <view wx:for="{{futureByHour}}" wx:key="" class="info">
             <view>{{item.time}}</view>
-            <image class="icon" src="{{weatherIcon}}"></image>
+            <image class="icon" src="{{getIcon.getIcon(item.weather)}}"></image>
             <view>{{item.temp}}°</view>
         </view>
     </block>
-    <block wx:else>
-        <view wx:for="{{todayWeather}}" wx:key="" class="info">
-            <view>{{item.time}}</view>
-            <image class="icon" src="{{weatherIcon}}"></image>
-            <view>{{item.temp}}°</view>
-        </view>
-    </block>
-
 </view>

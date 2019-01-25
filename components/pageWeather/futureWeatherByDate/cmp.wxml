@@ -1,5 +1,9 @@
 <!--components/pageWeather/futureWeatherByDate/cmp.wxml-->
-<view class="wrapper" wx:if="{{weatherIcon}}">
+
+<!--引入wxs-->
+<wxs module="getIcon" src="../../../utils/weatherIcon.wxs"></wxs>
+
+<view class="wrapper" wx:if="{{futureByDate.length>0}}">
     <view>
         <slot name="byHour"></slot>
     </view>
@@ -9,13 +13,22 @@
             <view>{{item.date}}</view>
             <view>{{item.type}}</view>
             <view>
-                <image class="image" src="{{weatherIcon}}"></image>
+                <image class="image" src="{{getIcon.getIcon(item.type)}}"></image>
             </view>
             <view>{{item.high}}</view>
-            <view>{{item.low}}</view>
+            <!--绘制温度曲线-->
+
+            <view style="margin-top:{{(_height+50)*2}}rpx;">{{item.low}}</view>
             <view>{{item.fengxiang}}</view>
         </view>
     </view>
+
+
+    <view class="canvas-container">
+        <canvas class="canvas" canvas-id="highTempCanvas" style="width:100%; height:{{_height+50}}rpx;"/>
+        <canvas class="canvas" canvas-id="lowTempCanvas" style="width:100%; height:{{_height+50}}rpx;"/>
+    </view>
+
 </view>
 
 
