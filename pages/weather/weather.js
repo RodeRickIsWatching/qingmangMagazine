@@ -111,7 +111,7 @@ Page({
             success: res => {
                 console.log(res)
                 this.setData({
-                    _height: 1334+'rpx'
+                    _height: 1334 + 'rpx'
                 })
             }
         })
@@ -151,8 +151,6 @@ Page({
         })
     },
     chargeByDate(_arr) {
-        this.chooseBg(_arr[0].type)
-
         _arr.forEach((item, index) => {
             item.date = item.date.split("日")[1];
             item.date = item.date.replace("星期", "周");
@@ -161,11 +159,15 @@ Page({
             item.fengxiang = item.fengxiang.replace("持续", "")
         })
         this.setTodayAndTomorrow([_arr[0], _arr[1]])
+
         this.setFutureWeatherByDate(_arr)
     },
-    fangZha() {
-        let date = new Date()
-        let temp = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+    fangZha(_status=false) {
+        let temp = ''
+        if(_status){
+            let date = new Date()
+            let temp = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+        }
         return [{
             "temp": "2",
             "time": `${temp} 02:00:00`,
@@ -204,7 +206,8 @@ Page({
         //防炸操作！
         _arr.forEach(item => {
             if (Object.is(item, null)) {
-                item = this.fangZha()
+                console.log("防诈")
+                item = this.fangZha(true)
             }
         })
         //过滤值，这里对时间的处理不好，以后要修改，即先转换成毫秒值再转换为具体日期
@@ -220,10 +223,15 @@ Page({
             item["time"] = temp.join('');
             return _templateStr === _tempStr
         })
+        //防诈！
+        if(!tempArr.length>0){
+            tempArr = this.fangZha()
+        }
 
         //传值
+        this.chooseBg(tempArr[0].weather)
         this.setNowWeather([tempArr[0]])
-        if(tempArr.length>2){
+        if (tempArr.length > 2) {
             tempArr.shift()
         }
         this.setFutureWeatherByHour(tempArr)

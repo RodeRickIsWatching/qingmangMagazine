@@ -78,6 +78,7 @@ Component({
             let len = _percentArr.length
             //用于存放转折点的坐标
             let _circle = [];
+            _context.fillStyle = _color
             _context.setStrokeStyle(_color)
             _context.setLineWidth(2)
             let hTempX = _x / 2,
@@ -96,7 +97,6 @@ Component({
             _context.stroke()
             //画圆点，一定要先画出折线，再画原点
             for (let i = 0; i < len; i++) {
-                _context.fillStyle = _color
                 _context.beginPath()
                 _context.arc(_circle[i]["x"], _circle[i]["y"], 5, 0, 2 * Math.PI, 1)
                 _context.fill();
