@@ -170,35 +170,35 @@ Page({
         }
         return [{
             "temp": "2",
-            "time": `${temp} 02:00:00`,
+            "time": `${temp} 02:00`,
             "weather": "晴"
         }, {
             "temp": "4",
-            "time": `${temp} 05:00:00`,
+            "time": `${temp} 05:00`,
             "weather": "晴"
         }, {
             "temp": "7",
-            "time": `${temp} 08:00:00`,
+            "time": `${temp} 08:00`,
             "weather": "晴"
         }, {
             "temp": "13",
-            "time": `${temp} 11:00:00`,
+            "time": `${temp} 11:00`,
             "weather": "晴"
         }, {
             "temp": "15",
-            "time": `${temp} 14:00:00`,
+            "time": `${temp} 14:00`,
             "weather": "晴"
         }, {
             "temp": "11",
-            "time": `${temp} 17:00:00`,
+            "time": `${temp} 17:00`,
             "weather": "晴"
         }, {
             "temp": "8",
-            "time": `${temp} 20:00:00`,
+            "time": `${temp} 20:00`,
             "weather": "晴"
         }, {
             "temp": "5",
-            "time": `${temp} 23:00:00`,
+            "time": `${temp} 23:00`,
             "weather": "多云"
         }]
     },

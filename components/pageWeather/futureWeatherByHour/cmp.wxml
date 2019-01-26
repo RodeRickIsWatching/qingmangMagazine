@@ -3,12 +3,14 @@
 <!--引入wxs-->
 <wxs module="getIcon" src="../../../utils/weatherIcon.wxs"></wxs>
 
-<view class="wrapper">
-    <block wx:if="{{futureByHour.length > 0}}">
-        <view wx:for="{{futureByHour}}" wx:key="" class="info">
-            <view>{{item.time}}</view>
-            <image class="icon" src="{{getIcon.getIcon(item.weather)}}"></image>
-            <view>{{item.temp}}°</view>
-        </view>
-    </block>
+<view>
+    <scroll-view scroll-x  class="wrapper">
+        <block wx:if="{{futureByHour.length > 0}}">
+            <view wx:for="{{futureByHour}}" wx:key="" class="info">
+                <view>{{item.time}}</view>
+                <image class="icon" src="{{getIcon.getIcon(item.weather)}}"></image>
+                <view>{{item.temp}}°</view>
+            </view>
+        </block>
+    </scroll-view>
 </view>

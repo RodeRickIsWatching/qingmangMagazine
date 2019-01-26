@@ -10,17 +10,18 @@
    /*height: 200rpx;*/
    width: 100%;
    padding: 20rpx 0;
+   white-space: nowrap;
 }
 
 .info{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    margin: 0 20rpx;
+   display: inline-block;
    text-align: center;
+   padding: 0 30rpx;
 }
 
 .icon{
    width: 70rpx;
    height: 70rpx;
 }
+
