@@ -55,6 +55,16 @@ Page({
                     //获取今天到凌晨12点的天气
                     this.chargeByHours(res)
                 })
+                gW.getTodayWeather(_city).then(res => {
+                    //获取实时天气
+                    let _time = new Date()
+                    let _hours = _time.getHours() < 10 ? '0'+_time.getHours(): _time.getHours()
+                    let _minutes = _time.getMinutes() < 10 ? '0'+_time.getMinutes(): _time.getMinutes()
+                    let _temp = `${_hours}: ${_minutes}`
+                    let _tempObj = {temp: res.temp_curr, time:_temp ,weather: res.weather_curr}
+                    this.chooseBg(res.weather_curr)
+                    this.setNowWeather([_tempObj])
+                })
             })
     },
     getLocation(_latitude = '', _longitude = '') {
@@ -162,9 +172,9 @@ Page({
 
         this.setFutureWeatherByDate(_arr)
     },
-    fangZha(_status=false) {
+    fangZha(_status = false) {
         let temp = ''
-        if(_status){
+        if (_status) {
             let date = new Date()
             let temp = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
         }
@@ -224,13 +234,11 @@ Page({
             return _templateStr === _tempStr
         })
         //防诈！
-        if(!tempArr.length>0){
+        if (!tempArr.length > 0) {
             tempArr = this.fangZha()
         }
 
         //传值
-        this.chooseBg(tempArr[0].weather)
-        this.setNowWeather([tempArr[0]])
         if (tempArr.length > 2) {
             tempArr.shift()
         }
