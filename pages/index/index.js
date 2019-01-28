@@ -18,7 +18,7 @@ Page({
         loading: true,
         refresh: ''
     },
-    _init(){
+    _init() {
         this.setData({
             articleList: [],
             markList: [],
@@ -28,6 +28,7 @@ Page({
             loading: true,
             refresh: ''
         })
+        this.getData(this.magazineId)
     },
     /**
      * 发送请求，并保存值
@@ -90,7 +91,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this.getData(this.magazineId);
+        this._init();
     },
 
     /**
@@ -104,14 +105,12 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-        this._init()
     },
 
     /**
      * 生命周期函数--监听页面隐藏
      */
     onHide: function () {
-
         // console.log(this.data.articleList)
     },
 
@@ -129,9 +128,10 @@ Page({
         this.setData({
             refresh: randomStr()
         })
-        setTimeout(()=>{
+        setTimeout(() => {
             wx.stopPullDownRefresh()
-        },500)
+            this._init();
+        }, 500)
     },
     /**
      * 页面上拉触底事件的处理函数
