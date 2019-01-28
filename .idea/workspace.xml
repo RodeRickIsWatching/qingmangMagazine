@@ -7,6 +7,9 @@
     <list default="true" id="acc4db51-0883-4fff-80cc-b657f2d0606f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/getWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/getWeather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/weather/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/weather/weather.js" afterDir="false" />
     </list>
@@ -19,13 +22,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1771638478">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="150" />
+          <entry key="wxml" value="46" />
+          <entry key="wxss" value="75" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="75" />
+          <entry key="HTML" value="46" />
+          <entry key="JavaScript" value="150" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="3" />
+          <entry key="json" value="2" />
+          <entry key="wxml" value="4" />
+          <entry key="wxss" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="4" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/getWeather.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/weather/weather.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="149" column="22" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
               <folding>
                 <element signature="e#28#81#0" expanded="true" />
               </folding>
@@ -34,10 +80,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/getWeather.js">
+        <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="297">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="47" column="92" lean-forward="true" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -53,7 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>refresh</find>
       <find>addLikeList</find>
       <find>Id</find>
       <find>toggleSign</find>
@@ -83,17 +173,16 @@
       <find>getRealTimeWeather</find>
       <find>today</find>
       <find>chooseBg</find>
+      <find>gW</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/seach.js" />
-        <option value="$PROJECT_DIR$/models/search.js" />
-        <option value="$PROJECT_DIR$/models/requests.js" />
         <option value="$PROJECT_DIR$/components/pageSearch/recommendList/cmp.js" />
         <option value="$PROJECT_DIR$/components/pageSearch/recommendList/cmp.json" />
         <option value="$PROJECT_DIR$/components/pageSearch/recommendItem/cmp.wxss" />
@@ -103,7 +192,6 @@
         <option value="$PROJECT_DIR$/components/pageSearch/recommendList/cmp.wxss" />
         <option value="$PROJECT_DIR$/pages/search/search.json" />
         <option value="$PROJECT_DIR$/pages/user.js" />
-        <option value="$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxml" />
         <option value="$PROJECT_DIR$/models/liked.js" />
         <option value="$PROJECT_DIR$/pages/user/user.json" />
         <option value="$PROJECT_DIR$/components/pageUser/userInfo/cmp.json" />
@@ -140,15 +228,26 @@
         <option value="$PROJECT_DIR$/components/pageWeather/futureWeatherByDate/cmp.js" />
         <option value="$PROJECT_DIR$/components/pageWeather/futureWeatherByHour/cmp.wxml" />
         <option value="$PROJECT_DIR$/components/pageWeather/futureWeatherByHour/cmp.wxss" />
-        <option value="$PROJECT_DIR$/models/getWeather.js" />
         <option value="$PROJECT_DIR$/pages/weather/weather.js" />
+        <option value="$PROJECT_DIR$/models/getWeather.js" />
+        <option value="$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxml" />
+        <option value="$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxss" />
+        <option value="$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxss" />
+        <option value="$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="771" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="888" />
+    <option name="y" value="35" />
+    <option name="width" value="758" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -156,54 +255,70 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pageWeather" type="462c0819:PsiDirectoryNode" />
+              <item name="pageIndex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pageWeather" type="462c0819:PsiDirectoryNode" />
-              <item name="futureWeatherByDate" type="462c0819:PsiDirectoryNode" />
+              <item name="pageIndex" type="462c0819:PsiDirectoryNode" />
+              <item name="articleLists" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pageWeather" type="462c0819:PsiDirectoryNode" />
-              <item name="futureWeatherByHour" type="462c0819:PsiDirectoryNode" />
+              <item name="pageIndex" type="462c0819:PsiDirectoryNode" />
+              <item name="articleLists" type="462c0819:PsiDirectoryNode" />
+              <item name="articleItem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pageWeather" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="pageIndex" type="462c0819:PsiDirectoryNode" />
+              <item name="articleLists" type="462c0819:PsiDirectoryNode" />
+              <item name="bottomNavIcon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pageIndex" type="462c0819:PsiDirectoryNode" />
+              <item name="tagLists" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pageIndex" type="462c0819:PsiDirectoryNode" />
+              <item name="tagLists" type="462c0819:PsiDirectoryNode" />
+              <item name="tagItem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="qingmangMagazine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qingmangMagazine" type="462c0819:PsiDirectoryNode" />
+              <item name="wxQingMangMagazine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxQingMangMagazine" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="weather" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -211,6 +326,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,10 +358,10 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.weatherIcon.wxs">
-    <configuration name="getRandom.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="getRandom.js" working-dir="$PROJECT_DIR$/utils">
+    <configuration name="getRandom.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="getRandom.js" working-dir="$PROJECT_DIR$/utils">
       <method v="2" />
     </configuration>
-    <configuration name="weatherIcon.wxs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/utils/weatherIcon.wxs" working-dir="$PROJECT_DIR$/utils">
+    <configuration name="weatherIcon.wxs" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/utils/weatherIcon.wxs" working-dir="$PROJECT_DIR$/utils">
       <method v="2" />
     </configuration>
     <list>
@@ -290,13 +406,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265210000" />
+    <option name="totallyTimeSpent" value="270565000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="771" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12446352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" weight="0.32953104" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -310,12 +426,12 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25478646" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.58957654" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="310" height="571" id="Documentation" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="310" height="571" id="Documentation" order="3" side_tool="true" weight="0.3297568" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3236111" />
@@ -343,76 +459,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleList/cmp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageUser/userInfo/cmp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleList/cmp.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/liked.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/getRandom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/user/user.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/index.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageUser/userInfo/cmp.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/pageUser/getUserInfo/cmp.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -449,13 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -584,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageWeather/futureWeatherByDate/cmp.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/pageWeather/weather/cmp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -619,9 +655,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="753" column="45" selection-start-line="753" selection-start-column="39" selection-end-line="753" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageWeather/futureWeatherByHour/cmp.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/weather/weather.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
+        <state relative-caret-position="675">
           <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#view#0;n#view#0;n#!!top" expanded="true" />
@@ -642,41 +692,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageWeather/futureWeatherByHour/cmp.wxml">
+    <entry file="file://$PROJECT_DIR$/components/pageWeather/futureWeatherByHour/cmp.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="493">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/pageWeather/futureWeatherByHour/cmp.wxss">
+    <entry file="file://$PROJECT_DIR$/components/pageWeather/futureWeatherByDate/cmp.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="817">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/getWeather.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="36" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="753" column="45" selection-start-line="753" selection-start-column="39" selection-end-line="753" selection-end-column="45" />
+        <state relative-caret-position="952">
+          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/weather/weather.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="149" column="22" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="22" />
+        <state relative-caret-position="442">
+          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
           <folding>
             <element signature="e#28#81#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/tagLists/tagList/cmp.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/tagLists/tagList/cmp.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/tagLists/tagItem/cmp.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/tagLists/tagItem/cmp.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="47" column="92" lean-forward="true" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/articleItem/cmp.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/pageIndex/articleLists/bottomNavIcon/cmp.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>

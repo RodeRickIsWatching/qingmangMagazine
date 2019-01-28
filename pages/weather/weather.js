@@ -58,10 +58,10 @@ Page({
                 gW.getTodayWeather(_city).then(res => {
                     //获取实时天气
                     let _time = new Date()
-                    let _hours = _time.getHours() < 10 ? '0'+_time.getHours(): _time.getHours()
-                    let _minutes = _time.getMinutes() < 10 ? '0'+_time.getMinutes(): _time.getMinutes()
+                    let _hours = _time.getHours() < 10 ? '0' + _time.getHours() : _time.getHours()
+                    let _minutes = _time.getMinutes() < 10 ? '0' + _time.getMinutes() : _time.getMinutes()
                     let _temp = `${_hours}: ${_minutes}`
-                    let _tempObj = {temp: res.temp_curr, time:_temp ,weather: res.weather_curr}
+                    let _tempObj = {temp: res.temp_curr, time: _temp, weather: res.weather_curr}
                     this.chooseBg(res.weather_curr)
                     this.setNowWeather([_tempObj])
                 })

@@ -8,7 +8,9 @@ class getWeatherModel {
     _returns(url, _successCb) {
         return new Promise(resolve => {
             wx.request({
-                url, method: "GET", success: (res) => {
+                url,
+                method: "GET",
+                success: (res) => {
                     _successCb(res, resolve)
                 }
             })
@@ -17,50 +19,33 @@ class getWeatherModel {
 
     getWeather(_param) {
         let url = this.baseUrl + _param
-        return new Promise(resolve => {
-            wx.request({
-                url,
-                method: "GET",
-                success: res => {
-                    if (res.data && res.data.status == 1000) {
-                        resolve(res.data.data)
-                    }
-                }
-            })
-        })
+        let _successCb = (res,resolve) =>{
+            if (res.data && res.data.status == 1000) {
+                resolve(res.data.data)
+            }
+        }
+        return this._returns(url, _successCb)
     }
 
     getTodayWeather(_city) {
         let url = this.todayBaseUrl + _city.replace("市", "")
-        // let _success = (res,resolve) => {
-        //     resolve(console.log(111, res))
-        // }
-        return new Promise(resolve => {
-            wx.request({
-                url,
-                method: "GET",
-                success: (res) => {
-                    if(res.data.success==1){
-                        resolve(res.data.result)
-                    }
-                }
-            })
-        })
+        let _successCb = (res,resolve) => {
+            if (res.data && res.data.success == 1) {
+                resolve(res.data.result)
+            }
+        }
+        return this._returns(url, _successCb)
     }
 
     getRealTimeWeather(_param) {
         let url = this.realTimeBaseUrl + _param
-        return new Promise(resolve => {
-            wx.request({
-                url,
-                method: "GET",
-                success: res => {
-                    if (res.data && res.data.status == "0") {
-                        resolve(res.data.weather36h)
-                    }
-                }
-            })
-        })
+        let _successCb = (res,resolve)=>{
+            if (res.data && res.data.status == "0") {
+                resolve(res.data.weather36h)
+            }
+        }
+        return this._returns(url, _successCb)
+
     }
 }
 
