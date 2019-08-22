@@ -42,5 +42,6 @@
         "selectedIconPath": "images/icon/mark.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

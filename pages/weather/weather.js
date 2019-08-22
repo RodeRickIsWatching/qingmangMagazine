@@ -119,7 +119,6 @@ Page({
     _getSize() {
         wx.getSystemInfo({
             success: res => {
-                console.log(res)
                 this.setData({
                     _height: 1334 + 'rpx'
                 })

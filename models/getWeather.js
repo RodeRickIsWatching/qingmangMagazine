@@ -29,6 +29,7 @@ class getWeatherModel {
 
     getTodayWeather(_city) {
         let url = this.todayBaseUrl + _city.replace("市", "")
+
         let _successCb = (res,resolve) => {
             if (res.data && res.data.success == 1) {
                 resolve(res.data.result)
